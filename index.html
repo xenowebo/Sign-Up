@@ -279,7 +279,7 @@
     const safeDestination = requestedDestination && requestedDestination.startsWith("/") && !requestedDestination.startsWith("//")
       ? requestedDestination
       : "../";
-    document.querySelector(".login a").href = `../login/?next=${encodeURIComponent(safeDestination)}`;
+    document.querySelector(".login a").href = `https://xenowebo.github.io/Login/?next=${encodeURIComponent(safeDestination)}`;
 
     signupForm.addEventListener("submit", async (event) => {
       event.preventDefault();
